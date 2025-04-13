@@ -36,7 +36,7 @@ function guess(index) {
   }
 
   currentRound++;
-  setTimeout(showRandomAnimal, 1500); // Wait 1.5s before showing the next animal
+  setTimeout(showRandomAnimal, 500); // Wait 1.5s before showing the next animal
 }
 
 startGame();
