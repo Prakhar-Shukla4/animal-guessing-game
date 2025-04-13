@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Guessing Game</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #f0f8ff;
+      padding: 20px;
+    }
+    .game-container {
+      background-color: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+      width: 300px;
+      margin: 0 auto;
+    }
+    .btn {
+      padding: 10px 20px;
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-size: 16px;
+      margin: 5px;
+    }
+    .btn:hover {
+      background-color: #45a049;
+    }
+    .feedback {
+      font-size: 18px;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="game-container">
+  <h2>Animal Guessing Game</h2>
+  <p>Guess the index of the animal in the list below.</p>
+  <p id="animal-name"></p>
+
+  <button class="btn" onclick="guess(0)">0</button>
+  <button class="btn" onclick="guess(1)">1</button>
+  <button class="btn" onclick="guess(2)">2</button>
+  <button class="btn" onclick="guess(3)">3</button>
+  <button class="btn" onclick="guess(4)">4</button>
+
+  <div class="feedback" id="feedback"></div>
+
+  <button class="btn" onclick="startGame()">Start New Game</button>
+</div>
+
+<script src="1.js"></script>
+</body>
+</html>
